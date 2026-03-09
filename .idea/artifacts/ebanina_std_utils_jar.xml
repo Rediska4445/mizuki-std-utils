@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ebanina-std-utils:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ebanina_std_utils_jar</output-path>
+    <root id="archive" name="ebanina-std-utils.jar">
+      <element id="module-output" name="ebanina-std-utils" />
+    </root>
+  </artifact>
+</component>

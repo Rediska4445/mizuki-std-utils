@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ebanina-std-utils:jar-java-docs">
+    <output-path>$PROJECT_DIR$/../../libraries/classes</output-path>
+    <root id="archive" name="ebanina-std-utils.jar">
+      <element id="module-output" name="ebanina-std-utils" />
+      <element id="directory" name="Javadoc">
+        <element id="module-source" name="ebanina-std-utils" />
+      </element>
+    </root>
+  </artifact>
+</component>
