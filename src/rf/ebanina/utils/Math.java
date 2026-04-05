@@ -31,6 +31,9 @@ public final class Math {
      * @throws ArithmeticException если oldMax равен oldMin (деление на ноль)
      */
     public static double scale(double value, double oldMin, double oldMax, double newMin, double newMax) {
+        if (oldMin == oldMax)
+            throw new ArithmeticException("Zero range");
+
         return ((value - oldMin) / (oldMax - oldMin)) * (newMax - newMin) + newMin;
     }
     /**
@@ -47,6 +50,9 @@ public final class Math {
      * @return значение, ограниченное диапазоном [min, max]
      */
     public static double clamp(double val, double min, double max) {
+        if (Double.isNaN(val))
+            return min;
+
         return java.lang.Math.max(min, java.lang.Math.min(max, val));
     }
 }
