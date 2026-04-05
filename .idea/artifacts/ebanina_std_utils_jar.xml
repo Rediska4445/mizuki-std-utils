@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/ebanina_std_utils_jar</output-path>
     <root id="archive" name="ebanina-std-utils.jar">
       <element id="module-output" name="ebanina-std-utils" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/json-simple-1.1.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
