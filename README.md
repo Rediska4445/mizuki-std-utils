@@ -1,7 +1,11 @@
 # Ebanina Std. Utils
 
-Professional utility toolkit for Java developers
-Type-safe collections • HTTP client • Advanced logging • Concurrency
+Professional utility toolkit for Java
+
+* Type-safe collections 
+* HTTP client 
+* Advanced logging 
+* Concurrency
 
 ## Purpose
 
@@ -14,18 +18,12 @@ Ebanina Utils provides industrial-strength tools for everyday development tasks:
 Tested in production Mizuka/Music API projects with Deezer/Spotify integration.
 
 ## Architecture
-rf.ebanina.utils
+### rf.ebanina.utils
 
-├── collections/ # TypicalMapWrapper (auto/strict variants)
-
-├── network/     # Request → Response (HTTP GET client)
-
-├── logging/     # ILogging interface (full-featured)
-
-├── concurrency/ # Weak references + executor utilities
-
-└── weak/        # WeakHashMap utilities
-
+* network
+* logging
+* concurrency
+* weak
 
 ## Quick Start
 
