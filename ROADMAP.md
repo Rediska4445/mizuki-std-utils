@@ -1,0 +1,1 @@
+1. Make the class that allows for broader encapsulation (access only to certain methods, classes)

@@ -60,6 +60,11 @@ public class LonelyThreadPool
      * Текущая выполняющаяся или ожидающая задача в пуле.
      */
     private Future<?> currentTask;
+
+    public synchronized void submit(Runnable task) {
+        this.runNewTask(task);
+    }
+
     /**
      * Запускает новую задачу в пуле, отменяя предыдущую, если она ещё не завершена.
      * <p>

@@ -72,14 +72,16 @@ public class TypicalMapWrapper<K>
     /**
      * Внутренняя карта для хранения значений вместе с их типами.
      */
-    private final Map<K, TypedValue<?>> map = new HashMap<>();
+    protected final Map<K, TypedValue<?>> map = new HashMap<>();
 
     /**
      * Внутренний класс, хранящий значение и его тип.
      *
      * @param <T> тип значения
      */
-    private record TypedValue<T>(T value, Class<T> type) implements Serializable {
+    private record TypedValue<T>(T value, Class<T> type)
+            implements Serializable
+    {
         @Serial
         private static final long serialVersionUID = 2_0_1L;
 
