@@ -285,7 +285,7 @@ public class Request {
         connection.setRequestMethod(method);
         connection.setConnectTimeout(10000);
         connection.setRequestProperty("Accept", "application/json");
-        connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/110.0.0.0 Safari/537.36");
+        connection.setRequestProperty("User-Agent", UserAgent.WINDOWS_CHROME.getCode());
 
         return send(connection);
     }

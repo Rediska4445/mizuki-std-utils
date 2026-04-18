@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Map;
 
 /**
  * <h1>Network</h1>
@@ -107,7 +108,13 @@ public class Network {
      * @return InputStream финального URL
      * @throws IOException HTTP ошибки, редиректы, таймауты
      */
-    public static InputStream followRedirects(URL originalUrl, int maxRedirects, int targetStatus) throws IOException {
+    public static InputStream followRedirects(
+            URL originalUrl,
+            int maxRedirects,
+            int targetStatus
+    )
+            throws IOException
+    {
         HttpURLConnection conn = null;
         int redirects = 0;
         URL url = originalUrl;
@@ -115,8 +122,7 @@ public class Network {
         while (redirects++ < maxRedirects) {
             conn = (HttpURLConnection) url.openConnection();
             conn.setInstanceFollowRedirects(false);
-            conn.setRequestProperty("User-Agent",
-                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36");
+            conn.setRequestProperty("User-Agent", UserAgent.WINDOWS_CHROME.getCode());
             conn.setConnectTimeout(10000);
             conn.setReadTimeout(10000);
 

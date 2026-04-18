@@ -66,7 +66,7 @@ import java.util.Objects;
  * }
  * }</pre>
  */
-public final class Response {
+public class Response {
     /**
      * <h3>HTTP статус код</h3>
      * Результат {@link java.net.HttpURLConnection#getResponseCode()}.
@@ -145,6 +145,9 @@ public final class Response {
      * </ul>
      */
     private StringBuilder body;
+
+    public Response() {}
+
     /**
      * <h3>Тело ответа</h3>
      * StringBuilder с полным HTTP телом (JSON для Deezer).
