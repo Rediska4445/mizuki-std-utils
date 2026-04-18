@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: JVstHost.jar vst3host.jar jlayer-1.0.1.4.jar mp3spi-1.9.5.4.
+ jar okhttp-3.12.13.jar ebanina-mod-api.jar jorbis-0.0.17.4.jar ebanina-
+ std-utils.jar json-simple-1.1.1.jar lastfm-java-0.1.2.jar vorbisspi-1.0
+ .3.3.jar ebanina-vst-ipc-host.jar tritonus-share-0.3.7.4.jar mizuka-dee
+ zer-api-wrapper.jar ebanina-soundcloud-api-wrapper.jar
+
