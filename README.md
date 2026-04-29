@@ -1,6 +1,6 @@
 # Ebanina Std. Utils
 
-Professional utility toolkit for Java
+Special utility toolkit for Java
 
 * Type-safe collections 
 * HTTP client 
