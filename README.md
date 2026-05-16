@@ -1,4 +1,4 @@
-# Ebanina Std. Utils
+# Clukva (Special for Mizuki)
 
 Special utility toolkit for Java
 
